@@ -199,7 +199,7 @@
           <div class="w-full h-full bg-void-950/90 rounded-[14px] flex items-center justify-center overflow-hidden relative">
             <model-viewer 
               id="chibi-gojo-viewer"
-              src="assets/Chibi_Gojo.glb" 
+              src="assets/Black_Deku.glb" 
               alt="Chibi Gojo 3D Model" 
               auto-rotate 
               rotation-per-second="24deg"
@@ -1347,10 +1347,10 @@
         console.warn('Model-viewer encounter an issue loading initial GLB URL, trying fallback route...', event);
         if (!gojoModelViewer.dataset.retried) {
           gojoModelViewer.dataset.retried = '1';
-          gojoModelViewer.src = 'assets/Chibi_Gojo.glb';
+          gojoModelViewer.src = 'assets/Black_Deku.glb';
         } else if (gojoModelViewer.dataset.retried === '1') {
           gojoModelViewer.dataset.retried = '2';
-          gojoModelViewer.src = 'https://fausta021.github.io/assets/Chibi_Gojo.glb';
+          gojoModelViewer.src = 'https://fausta021.github.io/assets/Black_Deku.glb';
         }
       });
     }
